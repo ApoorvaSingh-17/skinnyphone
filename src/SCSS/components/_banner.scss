@@ -1,0 +1,423 @@
+// .banner-container{
+//     height: 100vh;
+//     width: 100%;
+//     display: flex;
+//     position: relative;
+//     overflow: hidden;
+
+//     .left-arrow{
+//         height: 50px;
+//         width: 50px;
+//         background-color:#fff7f7;
+//         border-radius: 50%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         position: absolute;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//         left: 10px;
+//         cursor: pointer;
+//         opacity: 0.5;
+//         z-index: 2;
+//     }
+
+//     .right-arrow{
+//         height: 50px;
+//         width: 50px;
+//         background-color:#fff7f7;
+//         border-radius: 50%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         position: absolute;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//         right: 10px;
+//         cursor: pointer;
+//         opacity: 0.5;
+//         z-index: 2;
+//     }
+
+//     .wrapper{
+//         height: 100%;
+//         display: flex;
+//         transition: all 1.5s ease;
+        
+//     }
+// }
+
+// File: _banner.scss
+// .banner-container {
+//   height: 100vh;
+//   width: 100%;
+//   display: flex;
+//   position: relative;
+//   overflow: hidden;
+
+//   .left-arrow,
+//   .right-arrow {
+//     height: 50px;
+//     width: 50px;
+//     background-color: #fff7f7;
+//     border-radius: 50%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     margin: auto;
+//     cursor: pointer;
+//     opacity: 0.8;
+//     z-index: 5;
+//     transition: opacity 180ms ease;
+//   }
+
+//   .left-arrow { left: 10px; }
+//   .right-arrow { right: 10px; }
+
+//   .left-arrow:hover, .right-arrow:hover { opacity: 1; }
+
+//   .wrapper {
+//     height: 100%;
+//     width: 100%;
+    
+//   }
+//   .slides {
+//     height: 100%;
+//     display: flex;
+//     transition: all 1.5s ease;
+    
+//   }
+
+//   .slide-wrap {
+//     min-width: 100vw; 
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     box-sizing: border-box;
+//     padding: 40px;
+//   }
+
+//   /* -------------------------
+//      Slide type: split-slide
+//      ------------------------- */
+//   .split-slide {
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     gap: 24px;
+//     .img-container {
+//       flex: 1;
+//       height: 100%;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       img {
+//         height: 70%;
+//         width: auto;
+//         border-radius: 18px;
+//         object-fit: contain;
+//         box-shadow: 0 20px 40px rgba(2, 6, 23, 0.4);
+//       }
+//     }
+//     .info-container {
+//       flex: 1;
+//       padding: 24px;
+//       .title {
+//         font-size: 48px;
+//         margin: 0 0 12px 0;
+//       }
+//       .desc {
+//         margin: 0 0 20px 0;
+//         font-size: 18px;
+//         color: rgba(0,0,0,0.7);
+//       }
+//       .cta {
+//         padding: 12px 18px;
+//         border-radius: 10px;
+//         background: linear-gradient(90deg, #ff6a88, #6dd3ff);
+//         border: none;
+//         color: white;
+//         cursor: pointer;
+//         font-weight: 600;
+//       }
+//     }
+//   }
+
+//   /* -------------------------
+//      Slide type: slide-center
+//      ------------------------- */
+//   .slide-center {
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     gap: 18px;
+//     .img-content {
+//       flex: 1;
+//       display:flex;
+//       align-items:center;
+//       justify-content:center;
+//       img {
+//         max-height: 70%;
+//         border-radius: 14px;
+//         object-fit: cover;
+//         box-shadow: 0 18px 36px rgba(2,6,23,0.28);
+//       }
+//     }
+//     .info-content {
+//       flex: 0 0 40%;
+//       text-align: center;
+//       h1 { font-size: 42px; margin-bottom: 10px; }
+//       .desc { color: rgba(0,0,0,0.65); font-size: 16px; }
+//     }
+//   }
+
+//   /* -------------------------
+//      Slide type: slide-bg
+//      ------------------------- */
+//   .slide-bg {
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     .banner-bg {
+//       position: absolute;
+//       inset: 0;
+//       background-image: url('../../assets/skin7.jpg'); /* fallback - replace with mosaic if you have one */
+//       background-size: cover;
+//       background-position: center;
+//       filter: saturate(1.05) brightness(0.9);
+//       z-index: 0;
+//       transform: scale(1.02);
+//     }
+
+//     .info-text {
+//       position: relative;
+//       z-index: 2;
+//       text-align: center;
+//       color: white;
+//       padding: 20px 28px;
+//       background: rgba(0,0,0,0.35);
+//       border-radius: 12px;
+//       h1 { font-size: 44px; margin-bottom: 8px; }
+//       .desc { color: rgba(255,255,255,0.9); font-size: 16px; margin-bottom: 12px; }
+//       .cta {
+//         padding: 10px 16px;
+//         border-radius: 10px;
+//         border: none;
+//         background: linear-gradient(90deg, #ff6a88, #6dd3ff);
+//         color: #fff;
+//         cursor: pointer;
+//         font-weight: 600;
+//       }
+//     }
+//   }
+
+//   /* Responsive tweaks */
+//   @media (max-width: 900px) {
+//     .split-slide .info-container .title { font-size: 36px; }
+//     .slide-center .info-content h1 { font-size: 32px; }
+//     .banner-container { padding: 0; }
+//   }
+
+//   @media (max-width: 600px) {
+//     .slide-wrap { padding: 18px; }
+//     .split-slide { flex-direction: column; gap: 16px; }
+//     .slide-center { flex-direction: column; }
+//     .left-arrow, .right-arrow { display: none; } /* hide arrows on small screens, or keep them */
+//   }
+// }
+
+
+.banner-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  font-family: Inter, Roboto, system-ui, -apple-system, "Segoe UI", Arial;
+
+  .left-arrow, .right-arrow {
+    height: 50px;
+    width: 50px;
+    background-color: #fff7f7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0.8;
+    z-index: 5;
+    transition: opacity 180ms ease;
+  }
+  .left-arrow { left: 10px; }
+  .right-arrow { right: 10px; }
+  .left-arrow:hover, .right-arrow:hover { opacity: 1; }
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+  }
+
+  .slides {
+    height: 100%;
+    display: flex;
+    transition: transform 1.0s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+  }
+
+  /* each slide exactly 100vw and clipped */
+  .slide-wrap {
+    flex: 0 0 100vw;   /* <-- exact full-viewport width */
+    height: 100vh;
+    overflow: hidden;  /* <-- prevents bleed */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* add inner padding so padding doesn't change slide width */
+  .slide-inner {
+    width: calc(100% - 80px); /* 40px left + 40px right like your previous padding */
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* -------------------------
+     Slide type: split-slide
+     ------------------------- */
+  .split-slide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .img-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 0; /* important so child can shrink */
+      img {
+        max-height: 65vh;     /* use vh not % */
+        max-width: 100%;
+        width: auto;
+        object-fit: contain;
+        border-radius: 18px;
+        box-shadow: 0 20px 40px rgba(2,6,23,0.4);
+      }
+    }
+
+    .info-container {
+      flex: 1;
+      padding: 24px;
+      min-width: 0;
+      .title { font-size: 48px; margin: 0 0 12px 0; }
+      .desc { margin: 0 0 20px 0; font-size: 18px; color: rgba(0,0,0,0.7); }
+      .cta { padding: 12px 18px; border-radius: 10px; background: linear-gradient(90deg,#ff6a88,#6dd3ff); }
+    }
+  }
+
+  /* -------------------------
+     Slide type: slide-center
+     ------------------------- */
+  .slide-center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+
+    .img-content {
+      flex: 1;
+      min-width: 0; /* allows shrinking */
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      img {
+        max-height: 60vh; /* smaller than split */
+        max-width: 100%;
+        width: auto;
+        object-fit: cover;
+        border-radius: 14px;
+        box-shadow: 0 18px 36px rgba(2,6,23,0.28);
+      }
+    }
+
+    .info-content {
+      flex: 0 0 40%;
+      min-width: 0;
+      text-align: center;
+      h1 { font-size: 42px; margin-bottom: 10px; }
+      .desc { color: rgba(0,0,0,0.65); font-size: 16px; }
+    }
+  }
+
+  /* -------------------------
+     Slide type: slide-bg
+     ------------------------- */
+  .slide-bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .banner-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('../../assets/skin7.jpg'); /* fallback */
+      background-size: cover;
+      background-position: center;
+      filter: saturate(1.05) brightness(0.9);
+      z-index: 0;
+      transform: scale(1.02);
+    }
+
+    .info-text {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: white;
+      padding: 20px 28px;
+      background: rgba(0,0,0,0.35);
+      border-radius: 12px;
+      h1 { font-size: 44px; margin-bottom: 8px; }
+      .desc { color: rgba(255,255,255,0.9); font-size: 16px; margin-bottom: 12px; }
+      .cta { padding: 10px 16px; border-radius: 10px; }
+    }
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 900px) {
+    .split-slide .info-container .title { font-size: 36px; }
+    .slide-center .info-content h1 { font-size: 32px; }
+  }
+
+  @media (max-width: 600px) {
+    .slide-wrap { padding: 18px; }
+    .split-slide { flex-direction: column; gap: 16px; }
+    .slide-center { flex-direction: column; }
+    .left-arrow, .right-arrow { display: none; }
+    .slide-inner { width: 100%; padding: 18px; }
+  }
+}
+
