@@ -1,4 +1,5 @@
 import AllRoutes from "./routes/Routes"
+import "./SCSS/index.scss";
 
 function App() {
   

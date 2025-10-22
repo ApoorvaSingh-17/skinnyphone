@@ -1,0 +1,68 @@
+.nav-container {
+    height: 60px;
+    background-color: #F8E8EE;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+
+        .leftSide {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            .logo img{
+                height: 50px;
+                width: 50px;
+                object-fit: contain;
+            }
+            .brand-name {
+                text-align: center;
+                .h1{
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .center{
+           .search-container{
+                border: 0.5px solid lightgray;
+                display: flex;
+                align-items: center;
+                margin-left: 25px; 
+                padding: 4px; 
+                
+
+                input{
+                    border: none;
+                    width: 20rem;
+                    background-color:#F8E8EE;
+                    font-size: medium;
+                }
+
+            }
+        }
+
+        .rightSide{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .nav-items ul {
+                text-decoration: none;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: medium;
+                font-weight: 500;
+            }
+            .menu-item{
+                font-size: 14px;
+                cursor: pointer;
+                margin-left: 25px;
+                padding: 5px;
+                border: 0.5px solid lightgray;
+            }
+        }
+    }
+}
