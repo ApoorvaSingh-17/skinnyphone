@@ -1,0 +1,169 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Full viewport setup */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: -webkit-gradient(linear, left top, right bottom, from(#f8fafc), to(#e9eef5));
+  background: linear-gradient(to bottom right, #f8fafc, #e9eef5);
+  overflow-x: hidden;
+}
+
+/* Center the whole About Us section */
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* vertical centering */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* horizontal centering */
+  min-height: 100vh;
+  /* fill full screen */
+  width: 100vw;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Title styling */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+/* Developer list layout */
+.developer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 35px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Each developer card */
+.developer-card {
+  background-color: #fff;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  height: 340px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.developer-card:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Developer image */
+.developer-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #007bff;
+}
+
+/* Developer name */
+.developer-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Developer short description */
+.developer-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .developer-card {
+    width: 220px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  .developer-list {
+    gap: 25px;
+  }
+  .developer-card {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 10px;
+  }
+  .about-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  .developer-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .developer-card {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+}
