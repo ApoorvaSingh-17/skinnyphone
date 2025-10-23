@@ -6,25 +6,25 @@ const developers = [
     name: "Souvik Mondal",
     role: "Senior Developer",
     img: "",
-    about: "",
+    about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, exercitationem.",
   },
   {
     name: "Apoorva Singh",
     role: "Junior Programmer",
     img: "",
-    about: "",
+    about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, exercitationem.",
   },
   {
     name: "Suvajit Mondal",
     role: "Junior Programmer",
     img: "",
-    about: "Enjoys integrating frontend and backend to deliver complete web solutions.",
+    about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, exercitationem.",
   },
   {
     name: "Bimam Maity",
     role: "Junior Programmer",
     img: "",
-    about: "Passionate about design systems and creating seamless user experiences.",
+    about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, exercitationem.",
   },
 ];
 
